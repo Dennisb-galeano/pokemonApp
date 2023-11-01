@@ -1,0 +1,68 @@
+
+
+REDUX:
+  se puede utilizar en react, angular, view, florer
+  mantiene el estado de la app, que es independiente al framework o libreria que se utilice 
+  Contenedor predecible del estado de una APP
+    - es una forma de controlar donde se encuentra la informacion de mi app en todo momento
+      ayuda a que la modificacion de la informacion sea siempre en usa sola vida de manera predecible, para prevenir cambios accidentales en la mismaS
+
+  STORE: "LA FUENTE UNIDA DE LA VERDAD"
+    - ahi esta la informacion que mis componentes van a consumir ,, como una tiendaa
+    - voy al STORE cuando necesito informacion.
+    
+
+  REDUCER:
+    - Es una fn pura que maneja un estado
+      - el estado le va a servir la informacion a la pagina o a la vista,para que muestre la info deseada pero esta no modifica el state, solo lo lee 
+        - cuando se necesia un cambio, la pag o vista va a generar una accion, uqe es agregar un TODO
+          LA ACCION se envia al reducer y este realiza la ACCION
+            - despues de ejecutar LA accion, el reducer genera un nuevo estado y
+              este se le notifica a la vista.
+
+  REDUX "reducer"
+    - siempre se va a tener un STATE, que va a ser provehido por el STORE
+      - La vista la ve del Store, solo muestra la informacion,, igual que en el reducer
+        - cuando de necesita 
+
+
+        Redux: es el patron que crea nuevos estados vasados en los reducers" nuevos estados"
+          esos reducers, estados son las nuevas acciones en los reducers
+
+        React Redux: era la forma tradicional de trababjar con redux, se usa mucho código, mas tedioso, pero tiene muchos componentes ya cereadoa para trabajar con react
+
+        Redux Toolkit: serie de herramientas Y COMPONENTES especializados para trabajar redux, de una manera mas sencilla. que van a yudar a implementar el patron de redux  
+          - RTK Query, fue implementado para trabajar con peticiones http y maneja el cache, este nos va a ayudar a crear es STORE "unica fuente de la verdad"
+            es parecido al SWR, que es otra forma de manejar peticiones http,, y otros...react quwery.
+
+            - puede mantener el cache por cierto tiempo las peticiones para evitar duplicidad
+            - hacer el tracking de cuando esta cargando .. 
+            - optimiza la parte del ui 
+            - maneja el cache
+
+
+          en redux toolkit se manejan mucho los slices, y el mecanismo de crearlos siempre es el mismo . se puede tomar el que se creo en el counterSlice y reutilizarlo, sin embargo se puede crear un snippet para uqe etsa tarea sea mucho mas rapida
+             crear snippet:  clase 263 crar snippets
+              - ctrl + shift + p  > configure user snippet > buscar javascript .. crear... 	
+              - se crea snipet "redux-slice",  
+            ________________________________________
+
+ instalacion react toolkit, seguir tutorial 
+  - código copiado de la instalacion de toolkit https://redux-toolkit.js.org/tutorials/quick-start 
+
+
+ - slices: 
+ son funciones que reciben un objeto esta funcion tiene
+    - nombre
+    - estado inicial (initialState)
+    - reducers
+
+Thunks: 
+Es una accion asincrona que dispara otra accion, clase 265
+
+AXIOS: clase 266
+es una libreria de java srcipt que se utiliza para realizar peticiones HTTP, que permite realizar diferentes configuraciones
+
+
+- el store solo cambia el estado por medio de acciones
+

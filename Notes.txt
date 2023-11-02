@@ -66,3 +66,14 @@ es una libreria de java srcipt que se utiliza para realizar peticiones HTTP, que
 
 - el store solo cambia el estado por medio de acciones
 
+
+RTK "redux toolkit query" , Doc en redux Toolkit: si estamos trabajando con redux-toolkit, no es necesario realizar mas instalaciones, "competencia de usewr , react query " y otros.
+  despues de la configuracion:
+     facilita obtener la data
+      se usa para controlar y optimizar las peticiones HTTP
+      ayuda a evitar hacer posteos o traer informacion duplicada si ya se encuentra almacenada en el cache esa peticion.
+      
+middleware: es una fn que se ejecuta antes que otra
+propiedad computada:  una propiedad computada se refiere a una propiedad que se calcula o se deriva a partir de otras propiedades o datos.
+   significa que lo qué está dentro de [] es quien definirá el nombre de la propiedad.
+   
